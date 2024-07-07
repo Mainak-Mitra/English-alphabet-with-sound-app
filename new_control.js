@@ -24,6 +24,9 @@ function Animation(letter){
     var b=document.querySelectorAll(".btn div")[i];
     a.classList.add("anim");
     b.style.color="red";
-    
+    setTimeout(function(){
+        a.classList.remove("anim");
+        b.style.color="white";
+    },250);
 }
 
